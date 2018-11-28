@@ -5,3 +5,10 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+
+def findchart(string, char)
+  puts string.include?(char)
+end
+
+findchart(cadena, caracter)
