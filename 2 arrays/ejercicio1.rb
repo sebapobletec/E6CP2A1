@@ -6,3 +6,17 @@
 # 5. Mostrar en pantalla todos los elementos que se encuentren en una posición par.
 
 arreglo = [1,2,3,9,1,4,5,2,3,6,6]
+
+puts arreglo [0]
+
+puts arreglo [-1]
+
+puts arreglo
+
+for i in 0..(arreglo.length-1)
+puts "#{arreglo[i]} index #{i}"
+end
+
+for i in 0..(arreglo.length)
+puts "#{arreglo[i]}" if i.even?
+end
