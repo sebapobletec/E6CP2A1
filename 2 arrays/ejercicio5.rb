@@ -11,7 +11,7 @@ html = ''
 array = products.zip(prices)
 
 array.each do |i,j|
-  html += "<div class='product'><p> #{i} </p><p> Precio: #{j} </p> "
+  html += "<div class='product'><p> #{i} </p><p> Precio: #{j} </p>"
   html += "</div>\n"
 end
 
