@@ -10,3 +10,19 @@
 #    invertir el orden de los elementos en un arreglo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+a.delete_at(-1)
+a.delete_at(0)
+
+alength = a.length-1
+posmedia = alength/2
+a.delete_at(posmedia)
+
+a.delete_at(-1) if a[-1] != 1
+
+puts a
+b = []
+for i in 0..(a.length-1)
+b.push(a[-i])
+end
+a = b
+puts a
