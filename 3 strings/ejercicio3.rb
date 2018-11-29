@@ -6,3 +6,53 @@
 
 a = [1, 2, 3, 9, 12, 31, 'domingo']
 b = %w[lunes martes miércoles jueves viernes sábado domingo]
+
+
+def concatenar (a,b)
+  a.each_with_index do |value, index|
+   print value
+  end
+  b.each_with_index do |value, index|
+   print value
+  end
+  puts"\n"
+end
+concatenar(a,b)
+
+
+def unir(a,b)
+  a.each_with_index do |value, index|
+   print value
+  end
+  b.each_with_index do |value, index|
+   print value if a[index] !=value
+  end
+  puts"\n"
+end
+
+unir(a,b)
+
+
+
+
+def interseccion(a,b)
+  a.each_with_index do |v1, i1|
+    b.each_with_index do |v2,i2|
+      print  v1 if v1==v2
+    end
+  end
+  puts "\n"
+end
+
+interseccion(a,b)
+
+
+def intercalar(a,b)
+
+ for i in 0..(b.length-1)
+   print "#{a[i]} #{b[i]} "
+ end
+ puts "\n"
+end
+
+intercalar(a,b)
